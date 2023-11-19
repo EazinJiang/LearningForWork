@@ -10,7 +10,7 @@ public class Test {
 
         String num = scanner.next();
 
-        System.out.println(Shop.get(num));
+        System.out.println(Shop.getTypeByNum(num));
 
     }
 }
