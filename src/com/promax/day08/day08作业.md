@@ -268,6 +268,7 @@ public class Demo3 {
 ```
 ```java
 答：不能，首先要求降序排列，题中所给出的是升序。其次，collect方法的返回值是集合，不能直接拼成字符串。可以用先收集成对象数组，再遍历数组，按格式要求输出字符串。
+    也可以将倒数第二行代码改成：String collect = stream2.map(Student::getName).collect(Collectors.joining("-"));
 ```
 
 
