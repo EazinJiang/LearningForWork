@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<users>
+    <user id="1">
+        <name>张无忌</name>
+        <sex>男</sex>
+        <地址>光明顶</地址>
+        <password>wuji</password>
+    </user>
+    <user id="2">
+        <name>陈姐</name>
+        <sex>女</sex>
+        <地址>被窝</地址>
+        <password>yjf</password>
+    </user>
+</users>
