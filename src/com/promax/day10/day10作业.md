@@ -75,7 +75,7 @@ B. FileReader和FileWriter是专门用于读取和写入文本文件的
 
 C. 字节流类有InputStream和OutputStream
 
-D. 顶层类有Reader和Writer，他们都是接口      // ?为什么不对？
+D. 顶层类有Reader和Writer，他们都是接口      // 是抽象类不是接口
 
 ##### 6.【多选题】关于打印流PrintWriter说法正确的是(  ACD  ) 
 
@@ -107,7 +107,7 @@ C. File类既可以用来读文件，也可以用来写文件。  //仅仅是关
 
 D. File类用来处理与文件相关的操作。
 
-##### 9. 与InputStream流相对应的Java系统的标准输入对象是（ A ）  // ?蒙的
+##### 9. 与InputStream流相对应的Java系统的标准输入对象是（ A ） 
 
 A.System.in 
 
@@ -306,7 +306,9 @@ public class Demo4 {
 ```
 
 ```tex
-答：有country的值，因为这是静态变量，整个类的全部对象共享这一个变量。在main方法中已经赋值了country，虽然u对象没有从文件中获取到country的值，但是它被转为User对象后，会自动获取这个类的共享值，即首行定义的country="中国"
+（修改）
+country是private的，不能在类外对其进行赋值。
+打印出来的对象也不会有country的值，因为序列化保存的是对象的状态，而被static修饰的变量保存在全局数据区，属于类的状态而不是对象的状态
 ```
 
 ------
